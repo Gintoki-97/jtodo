@@ -1,0 +1,18 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "cn.gin.module.config.security.WebSecurityProperties",
+      "name": "application.security",
+      "type": "cn.gin.module.config.security.WebSecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "cn.gin.module.config.security.WebSecurityProperties",
+      "name": "application.security.social",
+      "description": "Spring Social properties storage",
+      "type": "cn.gin.module.config.security.oauth.SocialProperties"
+    }
+  ]
+}
