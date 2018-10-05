@@ -1,15 +1,18 @@
 #!/bin/bash
 
-user = `whoami`
+user=`whoami`
 
-if [ $user = "jesus" ]; then
+if [ $user = "jesus" ]
 
+then
     cd /home/jesus/developkit/repository/git/jtodo
     
     # update the code from git
     git pull -r
 
-    if [ $? -ne 0]; then
+    if [ $? -eq 0 ]
+
+    then
         cd "/home/jesus/developkit/service/tomcat/jtodo/t1/bin"
         ../shutdown.sh
         
@@ -20,5 +23,7 @@ if [ $user = "jesus" ]; then
         ../start.sh
     else
         echo "Git pull -r failed"
+    fi
 else
     echo "Please execute as jesus"
+fi
