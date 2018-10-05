@@ -12,6 +12,6 @@ cd /home/jesus/developkit/service/tomcat/jtodo/t1/bin
 
 # copy the execution jar file to the tomcat
 rm -rf /home/jesus/developkit/service/tomcat/jtodo/t1/webapps/*
-cp /home/jesus/developkit/repository/git/jtodo/src/web/target/jtodo*.jar /home/jesus/developkit/service/tomcat/jtodo/t1/webapps/jtodo.jar
+cp /home/jesus/developkit/repository/git/jtodo/src/web/target/jtodo*.war /home/jesus/developkit/service/tomcat/jtodo/t1/webapps/jtodo.war
 
 ./start.sh
