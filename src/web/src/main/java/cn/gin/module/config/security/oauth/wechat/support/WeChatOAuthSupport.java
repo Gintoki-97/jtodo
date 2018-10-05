@@ -41,7 +41,7 @@ public class WeChatOAuthSupport {
     public String getAuthorizeUrl(String redirectUrl, String state) {
 
         if (StringUtils.isEmpty(redirectUrl)) {
-            redirectUrl = "https://www.360.com";
+            redirectUrl = "http://106.14.157.181:8100/todo";
         }
         redirectUrl = JCodec.urlEncode(redirectUrl);
         state = state == null ? Constants.Symbol.EMPTY : state;

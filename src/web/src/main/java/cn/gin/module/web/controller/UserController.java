@@ -23,9 +23,9 @@ public class UserController {
     public String detail(Model model) {
 
         String wechatAuthorizeUrl = weChatOAuthSupport.getAuthorizeUrl(
-                "https://www.baidu.com", "");
+                "http://106.14.157.181:8100/todo", "");
         String githubAuthorizeUrl = githubOAuthSupport.getAuthorizeUrl(
-                "https://www.baidu.com", "");
+                "http://106.14.157.181:8100/todo", "");
         model.addAttribute("wechatAuthorizeUrl", wechatAuthorizeUrl);
         model.addAttribute("githubAuthorizeUrl", githubAuthorizeUrl);
 

@@ -1,4 +1,10 @@
 .DS_Store
+target/classes
+target/generated-sources
+target/jtodo-1.0-SNAPSHOT
+target/maven-archiver
+target/lib
+!target/jtodo-1.0-SNAPSHOT.war
 
 # Editor directories and files
 .idea

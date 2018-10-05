@@ -32,10 +32,8 @@ public class GithubOAuthSupport {
     public String getAuthorizeUrl(String redirectUrl, String state) {
 
         if (StringUtils.isEmpty(redirectUrl)) {
-            redirectUrl = "https://www.360.com";
+            redirectUrl = "http://106.14.157.181:8100/todo";
         }
-        redirectUrl = JCodec.urlEncode(redirectUrl);
-        state = state == null ? Constants.Symbol.EMPTY : state;
 
         SocialProperties social = securityProperties.getSocial();
         GithubConnectionFactory connectionFactory = new GithubConnectionFactory(
@@ -45,8 +43,10 @@ public class GithubOAuthSupport {
         OAuth2Operations oauthOperations = connectionFactory.getOAuthOperations();
         OAuth2Parameters params = new OAuth2Parameters();
         params.setRedirectUri(redirectUrl);
-        params.setState(state);
-        String authorizeUrl = oauthOperations.buildAuthorizeUrl(GrantType.AUTHORIZATION_CODE, params);
+        if (!StringUtils.isBlank(state)) {
+            params.setState(state);
+        }
+        String authorizeUrl = oauthOperations.buildAuthorizeUrl(null, params);
 
         return authorizeUrl;
     }

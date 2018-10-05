@@ -1,7 +1,7 @@
 logging:
   config: classpath:logback.xml
 server:
-  port: 8081
+  port: 8100
 spring:
   banner:
     location: classpath:banner.txt
@@ -12,6 +12,8 @@ spring:
     password: yxd729844
   thymeleaf:
     mode: LEGACYHTML5
+  jmx:
+    enabled: false
 application:
   info:
     name: jtodo

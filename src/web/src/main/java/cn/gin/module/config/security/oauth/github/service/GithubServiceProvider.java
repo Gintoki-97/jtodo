@@ -14,7 +14,7 @@ public class GithubServiceProvider extends AbstractOAuth2ServiceProvider<GithubA
      * Authorized interface provided by Github. If the user agrees to authorize, a code can be returned.
      * The returned <code>code</code> could used to exchange the access token
      */
-    private static final String URL_AUTHORIZE = "https://github.com/login/oauth/authorize";
+    public static final String URL_AUTHORIZE = "https://github.com/login/oauth/authorize";
 
     /**
      * Get access token through the last step response code

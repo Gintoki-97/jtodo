@@ -6,19 +6,13 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 /**
- * Hello world!
+ * Application starter, used to run as a jar package
  */
 @SpringBootApplication
-public class App  extends SpringBootServletInitializer {
+public class App {
 
     public static void main(String[] args) {
 
         SpringApplication.run(App.class, args);
-    }
-
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-
-        return builder.sources(this.getClass());
     }
 }
