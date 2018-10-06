@@ -19,7 +19,7 @@ then
 
         cp /home/jesus/developkit/repository/git/jtodo/src/api/target/jtodo*.war /home/jesus/developkit/service/tomcat/jtodo/t1/webapps/jtodo.war
 
-        if [ $? -eq 0]       
+        if [ $? -eq 0 ]       
         then
             sh /home/jesus/developkit/service/tomcat/jtodo/t1/bin/startup.sh
         else
