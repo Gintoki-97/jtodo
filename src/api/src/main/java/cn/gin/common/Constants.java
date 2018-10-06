@@ -42,6 +42,7 @@ public class Constants {
     public static class Path {
 
         public static final String CTRL_SITE_INDEX = "/";
+        public static final String CTRL_SITE_AUTH_GITHUB = "/auth/github";
 
         public static final String CTRL_TODO = "/todo";
         public static final String CTRL_TODO_INDEX = "/";

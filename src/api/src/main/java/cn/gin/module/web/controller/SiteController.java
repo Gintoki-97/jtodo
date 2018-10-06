@@ -25,4 +25,10 @@ public class SiteController {
 
         return json.toJson();
     }
+
+    @GetMapping(Constants.Path.CTRL_SITE_AUTH_GITHUB)
+    public String authGithub() {
+
+        return JsonObject.ok("Request success");
+    }
 }
