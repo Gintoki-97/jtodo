@@ -1,10 +1,16 @@
 .DS_Store
-target/classes
-target/generated-sources
-target/jtodo-1.0-SNAPSHOT
-target/maven-archiver
-target/lib
-!target/jtodo-1.0-SNAPSHOT.war
+node_modules/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+{{#unit}}
+/test/unit/coverage/
+{{/unit}}
+{{#e2e}}
+/test/e2e/reports/
+selenium-debug.log
+{{/e2e}}
 
 # Editor directories and files
 .idea
@@ -13,3 +19,6 @@ target/lib
 *.ntvs*
 *.njsproj
 *.sln
+
+package.json
+package-lock.json
