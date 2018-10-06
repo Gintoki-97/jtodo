@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+ul,
+li {
+  list-style: none;
+}
+.link-common {
+  color: initial;
+  text-decoration: none;
+}
+.link-common:hover {
+  color: initial;
+  text-decoration: none;
+}
+.link-common:active {
+  color: initial;
+  text-decoration: none;
+}
+.link-common:visited {
+  color: initial;
+  text-decoration: none;
+}
+.clear:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: '';
+}
+.font-size-base {
+  font-size: 14px;
+}
+.font-size-12 {
+  font-size: 12px;
+}
+.font-size-16 {
+  font-size: 16px;
+}
+.font-size-18 {
+  font-size: 18px;
+}
+.font-size-24 {
+  font-size: 24px;
+}
+.font-size-36 {
+  font-size: 36px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+.body .background {
+  position: relative;
+  min-height: 768px;
+  text-align: center;
+  background: url("../image/passport/header-banner.jpg") no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+.body .background >.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.body .background >.container .header {
+  position: relative;
+  padding-top: 12em;
+}
+.body .background >.container .content .app {
+  padding-bottom: 2.5em;
+}
+.body .background >.container .content .app .name {
+  margin: 0.4em 0;
+  font-size: 3em;
+  font-weight: 300;
+  color: #fff;
+}
+.body .background >.container .content .app .desc {
+  font-size: 3.6em;
+  font-weight: 300;
+  color: #fff;
+}
+.body .background >.container .content .app .tips {
+  margin: 1.6em 0;
+  font-size: 1em;
+  font-weight: 300;
+  color: #fff;
+}
+.body .background >.container .content .guides {
+  position: relative;
+  width: 100%;
+}
+.body .background >.container .content .guides .split {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  height: 100%;
+  border: 0.5px solid #999;
+}
+.body .background >.container .content .guides .guide {
+  width: 50%;
+  height: 22em;
+  float: left;
+}
+.body .background >.container .content .guides .guide .btn {
+  position: relative;
+  height: 3em;
+  line-height: 2em;
+  color: #fff;
+  border: 0.1em solid #aaa;
+}
+.body .background >.container .content .guides .guide .desc {
+  position: relative;
+  line-height: 1.5em;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.6;
+}
+.body .background >.container .content .guides .anonymous .btn {
+  top: 12em;
+  left: 12em;
+}
+.body .background >.container .content .guides .anonymous .desc {
+  top: 13em;
+  left: -4em;
+  text-align: right;
+}
+.body .background >.container .content .guides .authenticated .btn {
+  top: 1em;
+  left: -12em;
+}
+.body .background >.container .content .guides .authenticated .desc {
+  top: 2em;
+  left: 4em;
+  text-align: left;
+}
+.body .background >.container .footer {
+  margin: 2em auto;
+  margin-top: 4em;
+  color: #ccc;
+  font-size: 1em;
+}
+.body .background >.container .footer a {
+  color: #ccc;
+}

@@ -1,0 +1,145 @@
+@import "_global"
+
+// Custom block style
+
+body {
+    margin 0
+    padding 0
+    font-family 'Roboto Slab', serif
+}
+
+.body {
+
+  .background {
+
+    position relative
+    min-height 768px
+    text-align center
+    background url('../image/passport/header-banner.jpg') no-repeat
+    background-size cover
+    -webkit-background-size cover
+
+    >.container {
+
+      margin-left auto
+      margin-right auto
+      padding-left 15px
+      padding-right 15px
+
+      .header {
+        position relative
+        padding-top 12em
+      }
+
+      .content {
+
+        .gintoki {
+
+        }
+
+        .app {
+
+          padding-bottom 2.5em
+
+          .name {
+            margin 0.4em 0
+            font-size 3em
+            font-weight 300
+            color color-white
+          }
+
+          .desc {
+            font-size 3.6em
+            font-weight 300
+            color color-white
+          }
+
+          .tips {
+            margin 1.6em 0
+            font-size 1em
+            font-weight 300
+            color color-white
+          }
+        }
+
+        .guides {
+
+          position relative
+          width 100%
+
+          .split {
+            position absolute
+            top 0
+            left 50%
+            display block
+            height 100%
+            border .5px solid color-gray-lv9
+          }
+
+          .guide {
+
+            width 50%
+            height 22em
+            float left
+
+            .btn {
+              position relative
+              height 3em
+              line-height 2em
+              color color-white
+              border .1em solid color-gray-lva
+            }
+
+            .desc {
+              position relative
+              line-height 1.5em
+              font-weight 300
+              color color-white
+              opacity .6
+            }
+          }
+
+          .anonymous {
+
+            .btn {
+              top 12em
+              left 12em
+            }
+
+            .desc {
+              top 13em
+              left -4em
+              text-align right 
+            }
+          }
+
+          .authenticated {
+
+            .btn {
+              top 1em
+              left -12em
+            }
+
+            .desc {
+              top 2em
+              left 4em
+              text-align left 
+            }
+          }
+        }
+      }
+
+      .footer {
+
+        margin 2em auto
+        margin-top 4em
+        color color-gray-lvc
+        font-size 1em
+
+        a {
+          color color-gray-lvc
+        }
+      }
+    }
+  }
+}
