@@ -5,9 +5,13 @@ import cn.gin.module.config.security.oauth.SocialProperties;
 import cn.gin.module.config.security.oauth.github.connection.GithubConnectionFactory;
 import cn.gin.module.config.security.oauth.wechat.connection.WeChatConnectionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.social.SocialAutoConfigurerAdapter;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.social.connect.ConnectionFactory;
 
+@Configuration
+@ConditionalOnProperty(prefix = "application.security.social.github", name="app-id")
 public class GithubAutoConfig extends SocialAutoConfigurerAdapter {
 
     @Autowired

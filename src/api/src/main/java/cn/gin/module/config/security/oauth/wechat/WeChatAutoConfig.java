@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.social.connect.ConnectionFactory;
 
 @Configuration
-@ConditionalOnProperty(prefix = "todo.security.social.wechat", name="app-id")
+@ConditionalOnProperty(prefix = "application.security.social.wechat", name="app-id")
 public class WeChatAutoConfig extends SocialAutoConfigurerAdapter {
 
     @Autowired

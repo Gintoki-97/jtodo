@@ -11,6 +11,11 @@ import org.springframework.context.annotation.Configuration;
 public class SocialProperties {
 
     /**
+     * URL that spring social will intercept, the default URL prefix is '/auth'
+     */
+    private String filterProcessesUrl = "/auth";
+
+    /**
      * WeChat properties storage
      */
     private WeChatProperties weChat = new WeChatProperties();
@@ -19,6 +24,14 @@ public class SocialProperties {
      * Github properties storage
      */
     private GithubProperties github = new GithubProperties();
+
+    public String getFilterProcessesUrl() {
+        return filterProcessesUrl;
+    }
+
+    public void setFilterProcessesUrl(String filterProcessesUrl) {
+        this.filterProcessesUrl = filterProcessesUrl;
+    }
 
     public WeChatProperties getWeChat() {
         return weChat;

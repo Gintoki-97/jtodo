@@ -22,6 +22,7 @@ application:
     static: http://jtodo.wandan.site/static
   security:
     social:
+      filter-processes-url: /user/auth
       github:
         provider-id: github
         app-id: b8815440e7e47e1c5c91

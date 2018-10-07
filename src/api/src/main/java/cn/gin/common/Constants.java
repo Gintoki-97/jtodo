@@ -49,6 +49,8 @@ public class Constants {
 
         public static final String CTRL_USER = "/user";
         public static final String CTRL_USER_DETAIL = "/detail";
+        public static final String CTRL_USER_AUTH_GITHUB = "/auth/github";
+        public static final String CTRL_USER_AUTH_WECHAT = "/auth/wechat";
     }
 
     /**
