@@ -1,7 +1,9 @@
 package cn.gin.module.config.security.oauth.github.service.api;
 
 import cn.gin.common.Constants;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,8 +31,10 @@ public class GithubApiImpl extends AbstractOAuth2ApiBinding implements GithubApi
      */
     private static final String URL_USER_DETAILS = "https://api.github.com/user";
 
-    @Autowired
-    private ObjectMapper mapper;
+    /**
+     * Jackson object mapper
+     */
+    private ObjectMapper mapper = new ObjectMapper();
 
     public GithubApiImpl(String accessToken) {
         super(accessToken, TokenStrategy.ACCESS_TOKEN_PARAMETER);
@@ -54,13 +58,13 @@ public class GithubApiImpl extends AbstractOAuth2ApiBinding implements GithubApi
     /**
      * Update the default encoding from ISO8859-1 to UTF-8
      */
-    @Override
-    protected List<HttpMessageConverter<?>> getMessageConverters() {
-
-        List<HttpMessageConverter<?>> messageConverters = super.getMessageConverters();
-        messageConverters.remove(0);
-        messageConverters.add(new StringHttpMessageConverter(Charset.forName(Constants.System.ENCODING)));
-
-        return messageConverters;
-    }
+//    @Override
+//    protected List<HttpMessageConverter<?>> getMessageConverters() {
+//
+//        List<HttpMessageConverter<?>> messageConverters = super.getMessageConverters();
+//        messageConverters.remove(0);
+//        messageConverters.add(new StringHttpMessageConverter(Charset.forName(Constants.System.ENCODING)));
+//
+//        return messageConverters;
+//    }
 }

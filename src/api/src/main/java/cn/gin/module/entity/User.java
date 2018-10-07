@@ -39,7 +39,7 @@ public class User {
      *
      * <pre>
      *     temporary = 1    Temporary
-     *     temporary = 0    Not temporary
+     *     temporary = 0    Not temporary (Means Authenticated)
      * </pre>
      */
     private Integer temporary;

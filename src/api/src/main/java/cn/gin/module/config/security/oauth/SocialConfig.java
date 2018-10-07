@@ -13,8 +13,8 @@ import org.springframework.social.connect.jdbc.JdbcUsersConnectionRepository;
 
 import javax.sql.DataSource;
 
-@EnableSocial
 @Configuration
+@EnableSocial
 public class SocialConfig extends SocialConfigurerAdapter {
 
     @Autowired
@@ -23,11 +23,15 @@ public class SocialConfig extends SocialConfigurerAdapter {
     @Autowired
     private WebSecurityProperties securityProperties;
 
+    @Autowired
+    private AutoConnectionSignup connectionSignup;
+
     @Override
     public UsersConnectionRepository getUsersConnectionRepository(ConnectionFactoryLocator connectionFactoryLocator) {
 
         JdbcUsersConnectionRepository repository = new JdbcUsersConnectionRepository(dataSource,
                 connectionFactoryLocator, Encryptors.noOpText());
+        repository.setConnectionSignUp(connectionSignup);
 
         return repository;
     }
@@ -36,8 +40,7 @@ public class SocialConfig extends SocialConfigurerAdapter {
     public SpringSocialConfigurer socialSecurityConfig() {
 
         String filterProcessesUrl = securityProperties.getSocial().getFilterProcessesUrl();
-        SpringSocialConfigurer configurer = new SpringSocialConfigurer(filterProcessesUrl);
 
-        return configurer;
+        return new SpringSocialConfigurer(filterProcessesUrl);
     }
 }

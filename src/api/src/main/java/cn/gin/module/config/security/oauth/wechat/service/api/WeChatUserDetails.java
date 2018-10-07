@@ -17,7 +17,7 @@ public class WeChatUserDetails {
     private String unionid;
 
     /**
-     * The nickname of current user
+     * The nickname of current user in WeChat
      */
     private String nickname;
 

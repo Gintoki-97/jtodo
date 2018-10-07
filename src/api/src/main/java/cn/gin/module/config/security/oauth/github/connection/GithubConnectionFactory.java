@@ -2,7 +2,6 @@ package cn.gin.module.config.security.oauth.github.connection;
 
 import cn.gin.module.config.security.oauth.github.service.GithubServiceProvider;
 import cn.gin.module.config.security.oauth.github.service.api.GithubApi;
-import org.springframework.social.connect.ApiAdapter;
 import org.springframework.social.connect.Connection;
 import org.springframework.social.connect.ConnectionData;
 import org.springframework.social.connect.support.OAuth2Connection;

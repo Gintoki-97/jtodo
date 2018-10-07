@@ -1,6 +1,5 @@
 package cn.gin.module.config.security.oauth.github.connection;
 
-import cn.gin.common.Constants;
 import cn.gin.module.config.security.oauth.github.service.api.GithubApi;
 import cn.gin.module.config.security.oauth.github.service.api.GithubUserDetails;
 import org.springframework.social.connect.ApiAdapter;
@@ -28,8 +27,10 @@ public class GithubAdaptor implements ApiAdapter<GithubApi> {
     public void setConnectionValues(GithubApi api, ConnectionValues values) {
 
         GithubUserDetails userDetails = api.getGithubUserDetails();
-        values.setProviderUserId(userDetails.getUserId());
-        values.setDisplayName(userDetails.getUsername());
+        values.setProviderUserId(String.valueOf(userDetails.getOpenid()));
+        values.setDisplayName(userDetails.getNickname());
+        values.setImageUrl(userDetails.getAvatarUrl());
+        values.setProfileUrl(userDetails.getProfileUrl());
     }
 
     @Override
