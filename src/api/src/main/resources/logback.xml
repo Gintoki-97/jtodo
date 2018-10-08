@@ -100,11 +100,11 @@
     <logger name="org.mybatis.spring" level="INFO" additivity="false" />
 
     <!-- Logger root folder -->
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="STDOUT" />
         <appender-ref ref="ERROR" />
         <appender-ref ref="WARN" />
         <appender-ref ref="INFO" />
-        <appender-ref ref="DEBUG" />
+        <!--<appender-ref ref="DEBUG" />-->
     </root>
 </configuration>
