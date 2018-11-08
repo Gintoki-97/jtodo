@@ -7,7 +7,7 @@ spring:
     location: classpath:banner.txt
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://106.14.157.181:3306/todo
+    url: jdbc:mysql:////todo
     name: root
     password: yxd729844
   thymeleaf:
