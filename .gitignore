@@ -8,6 +8,7 @@
 
 # Target
 jtodo/target/
+jtodo/jtodo.iml
 
 # Compiled class file
 *.class
