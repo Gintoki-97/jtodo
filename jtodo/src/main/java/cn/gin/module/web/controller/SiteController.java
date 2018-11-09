@@ -31,7 +31,7 @@ public class SiteController {
             return Servlets.redirect(Constants.Path.CTRL_TODO);
         }
 
-        return Servlets.redirect(Constants.Path.CTRL_SITE_PASSPORT);
+        return Servlets.redirect(Constants.Path.CTRL_SITE_INTRO);
     }
 
     /**
@@ -39,8 +39,8 @@ public class SiteController {
      *
      * @return Passport view
      */
-    @GetMapping(Constants.Path.CTRL_SITE_PASSPORT)
-    public String passport(Model model) {
+    @GetMapping(Constants.Path.CTRL_SITE_INTRO)
+    public String intro(Model model) {
 
         UserDetails currentUser = UserService.getCurrentUser();
 
@@ -48,7 +48,7 @@ public class SiteController {
             return Servlets.redirect(Constants.Path.CTRL_TODO);
         }
 
-        return Constants.Path.VIEW_SITE_PASSPORT;
+        return Constants.Path.VIEW_SITE_INTRO;
     }
 
     @GetMapping(Constants.Path.CTRL_SITE_HELLO)

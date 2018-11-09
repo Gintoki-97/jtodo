@@ -43,9 +43,9 @@ public class Constants {
 
         public static final String CTRL_SITE_INDEX = "/";
         public static final String CTRL_SITE_HELLO = "/hello";
-        public static final String CTRL_SITE_PASSPORT = "/passport";
+        public static final String CTRL_SITE_INTRO = "/intro";
         public static final String CTRL_SITE_AUTH_GITHUB = "/auth/github";
-        public static final String VIEW_SITE_PASSPORT = "passport";
+        public static final String VIEW_SITE_INTRO = "intro";
 
 
         public static final String CTRL_TODO = "/todo";

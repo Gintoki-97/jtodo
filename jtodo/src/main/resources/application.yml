@@ -23,6 +23,10 @@ application:
   security:
     social:
       filter-processes-url: /user/auth
+      passport:
+        provider-id: passport
+        app-id: xxx
+        app-secret: xxx
       github:
         provider-id: github
         app-id: b8815440e7e47e1c5c91
